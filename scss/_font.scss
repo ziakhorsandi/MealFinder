@@ -1,0 +1,11 @@
+// -------the Rubik-Regular.ttf----------
+@font-face {
+  font-family: Rubik-Regular;
+  src: url("./../assets/fonts/Rubik-Regular.ttf");
+}
+@mixin Rubik-Regular() {
+  font-family: Rubik-Regular;
+}
+.Rubik-Regular {
+  font-family: Rubik-Regular;
+}
