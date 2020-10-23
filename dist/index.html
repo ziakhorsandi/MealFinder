@@ -14,8 +14,10 @@
     <header>
       <div class="container">
         <h1>Meal Finder</h1>
-        <div class="search">
-          <div class="search__icon">
+
+        <!-- search meal -->
+        <div class="search bg-cl-sec-3">
+          <div class="search__icon font-cl-sec-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -29,11 +31,11 @@
             </svg>
           </div>
           <input
-            class="search__input"
+            class="search__input font-cl-sec-2"
             type="text"
             placeholder="Search your meal ..."
           />
-          <div class="search__advanced">
+          <div class="search__advanced bg-cl-sec-4">
             <svg
               enable-background="new 0 0 32 32"
               id="Layer_1"
@@ -65,6 +67,8 @@
         </div>
       </div>
     </header>
+
+    <!-- Random Meal -->
     <div class="randomMeal">
       <div class="container">
         <h2 class="randomMeal__heading title">Random Meal</h2>
@@ -82,40 +86,38 @@
         </div>
       </div>
     </div>
+
+    <!-- Category -->
     <div class="category">
       <div class="container">
         <h2 class="category__heading title">Category</h2>
-        <div class="category__list">
-          <div class="category__list__item selected">
-            <div class="category__list__item__img">
+        <div class="category__list font-cl-sec-1">
+          <div class="category__item selected">
+            <div class="category__img">
               <img src="assets/images/beef1.png" alt="beef" />
             </div>
-
-            <p class="category__list__item__name">beef</p>
+            <p class="category__name">beef</p>
           </div>
 
-          <div class="category__list__item">
-            <div class="category__list__item__img">
+          <div class="category__item">
+            <div class="category__img">
               <img src="assets/images/chicken1.png" alt="chicken" />
             </div>
-
-            <p class="category__list__item__name">Chicken</p>
+            <p class="category__name">Chicken</p>
           </div>
 
-          <div class="category__list__item">
-            <div class="category__list__item__img">
+          <div class="category__item">
+            <div class="category__img">
               <img src="assets/images/dessert.png" alt="dessert" />
             </div>
-
-            <p class="category__list__item__name">Dessert</p>
+            <p class="category__name">Dessert</p>
           </div>
 
-          <div class="category__list__item">
-            <div class="category__list__item__img">
+          <div class="category__item">
+            <div class="category__img">
               <img src="assets/images/lamb.png" alt="lamb" />
             </div>
-
-            <p class="category__list__item__name">Lamb</p>
+            <p class="category__name">Lamb</p>
           </div>
         </div>
       </div>

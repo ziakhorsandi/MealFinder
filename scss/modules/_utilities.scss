@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-width: 320px;
+  max-width: 768px;
+  margin: auto;
+}
+
+:focus {
+  outline: none;
+}
+
+.container {
+  margin: 20px 14px 40px 14px;
+}
+
+svg {
+  fill: map-get($colors, "cl-sec-1");
+  // fill: map-get($map: $colors, $key: $cl-sec-1);
+  height: inherit;
+  width: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: map-get($colors, "cl-sec-5");
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.selected {
+  background: map-get($colors, "cl-primary");
+}
