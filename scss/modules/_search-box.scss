@@ -1,0 +1,33 @@
+.search {
+  border-radius: 15px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    // padding: 0 6px;
+    height: 24px;
+  }
+
+  &__input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  &__advanced {
+    width: 34px;
+    height: 32px;
+    padding: 5px 6px;
+    border-radius: 12px;
+    box-shadow: 1px 3px 4px rgba($color: #000000, $alpha: 0.25);
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
