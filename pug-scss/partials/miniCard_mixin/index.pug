@@ -1,0 +1,13 @@
+mixin minicard(props)
+  .minicard.mb-2
+    //- .minicard__img(style=`background-image:url(${props.img})`)
+    .minicard__img
+      img(src=props.img)
+      .minicard__grad(class=props.colorClass)
+      if props.colorClass==='minicard__grad_white'
+        .minicard__label.Rubik-Regular.font-cl-sec-6
+          span=props.label
+    .minicard__txt.px-2.mt-1.Rubik-Regular.font-cl-sec-5
+      span.mt-1=props.caption
+
+
