@@ -16,7 +16,12 @@ body {
 }
 
 .container {
-  margin: 20px 14px 40px 14px;
+  padding: 20px 14px 40px 14px;
+}
+
+button {
+  border: none;
+  background: transparent;
 }
 
 svg {
@@ -52,4 +57,17 @@ h6 {
 
 .selected {
   background: map-get($colors, "cl-primary");
+  color: #644a00;
+}
+
+.btn--primary {
+  background: map-get($colors, "cl-primary");
+  border-radius: 10px;
+  padding: 3px 15px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mask {
+  border-radius: 10px;
 }
