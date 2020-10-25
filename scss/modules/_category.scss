@@ -2,6 +2,7 @@
   &__list {
     display: flex;
     padding-left: 4px;
+    overflow: hidden;
   }
 
   &__item {
@@ -15,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 12px;
   }
 
   &__img {

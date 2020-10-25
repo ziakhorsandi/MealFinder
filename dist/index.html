@@ -72,15 +72,43 @@
     <div class="randomMeal">
       <div class="container">
         <h2 class="randomMeal__heading title">Random Meal</h2>
-        <div class="randomMeal__img">
-          <img
-            src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg"
-            alt="hamburger"
-          />
-          <div class="randomMeal__img__info">
-            <div class="randomMeal__img__info__name">Big Mac</div>
-            <button class="randomMeal__img__info__category btn--primary">
-              Beef
+        <div class="randomMeal__carousel">
+          <div class="siema mask">
+            <div class="randomMeal__item">
+              <div class="randomMeal__img">
+                <img
+                  src="https://www.themealdb.com/images/media/meals/9f4z6v1598734293.jpg"
+                  alt="hamburger"
+                />
+              </div>
+
+              <div class="gradient"></div>
+              <div class="randomMeal__info">
+                <div class="randomMeal__name"><p>Big Mac</p></div>
+                <button class="randomMeal__category btn--primary">Beef</button>
+              </div>
+            </div>
+
+            <div class="randomMeal__item">
+              <div class="randomMeal__img">
+                <img
+                  src="https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg"
+                  alt="hamburger"
+                />
+              </div>
+              <div class="gradient"></div>
+              <div class="randomMeal__info">
+                <div class="randomMeal__name"><p>Big Mac</p></div>
+                <button class="randomMeal__category btn--primary">Beef</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__nav">
+            <button class="prev">
+              <img src="assets/images/nav_before.svg" alt="before" />
+            </button>
+            <button class="next">
+              <img src="assets/images/nav_next.svg" alt="next" />
             </button>
           </div>
         </div>
@@ -122,5 +150,16 @@
         </div>
       </div>
     </div>
+
+    <script src="js/vendors/siema.min.js"></script>
+    <script>
+      const mySiema = new Siema();
+      document
+        .querySelector(".prev")
+        .addEventListener("click", () => mySiema.prev());
+      document
+        .querySelector(".next")
+        .addEventListener("click", () => mySiema.next());
+    </script>
   </body>
 </html>
