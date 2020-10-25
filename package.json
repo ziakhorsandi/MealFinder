@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/modules -o dist/css/ --recursive"
+    "sass": "node-sass -w pug-scss/pages -o dist/css/ --recursive",
+    "pug": "pug -w ./pug-scss/pages -o ./dist -P",
+    "dev": "concurrently --kill-others \"npm run sass\" \"npm run pug\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "node-sass": "^4.14.1"
   },
   "dependencies": {
+    "pug-cli": "^1.0.0-alpha6",
     "siema": "^1.5.1"
   }
 }
