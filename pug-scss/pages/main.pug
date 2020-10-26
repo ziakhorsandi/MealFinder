@@ -17,24 +17,20 @@
     </header>
 
     <!-- Random Meal -->
-    <div class="randomMeal">
-      <div class="container">
-        <h2 class="randomMeal__heading title">Random Meal</h2>
-        <div class="randomMeal__img">
-          img(src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",alt="hamburger")
 
-          <div class="randomMeal__img__info">
-            <div class="randomMeal__img__info__name">Big Mac</div>
-            <button class="randomMeal__img__info__category btn--primary">
-              Beef
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Category -->
     include ./../modules/category/index.pug
-    
+
+    include ./../partials/miniCard_mixin/index.pug
+    - const propsarr=[{img:"assets/images/meal01.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal01.png",colorClass:"minicard__grad_white",caption:"Vegan Chocolate Cake",label:"Beef"}]
+
+    div(style="width:100%; display:flex; justify-content:center; align-items:center; padding:1rem; height:150px")
+      for elem in propsarr
+        div(style="width:50%;height:inherit")
+          +minicard(elem)
+
+
+
   </body>
 </html>
