@@ -19,8 +19,16 @@
     <!-- Random Meal -->
 
 
+ 
+
+
+
+    include ./../modules/carousel/index.pug
+    
     <!-- Category -->
     include ./../modules/category/index.pug
+    
+    //- </div>
 
     include ./../partials/miniCard_mixin/index.pug
     - const propsarr=[{img:"assets/images/meal01.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal01.png",colorClass:"minicard__grad_white",caption:"Vegan Chocolate Cake",label:"Beef"}]
@@ -30,7 +38,11 @@
         div(style="width:50%;height:inherit")
           +minicard(elem)
 
+ 
 
 
+    script(src="js/vendors/siema.min.js")
+    script(src="js/main.js")
+  
   </body>
 </html>
