@@ -17,24 +17,18 @@
     </header>
 
     <!-- Random Meal -->
-    <div class="randomMeal">
-      <div class="container">
-        <h2 class="randomMeal__heading title">Random Meal</h2>
-        <div class="randomMeal__img">
-          img(src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",alt="hamburger")
-
-          <div class="randomMeal__img__info">
-            <div class="randomMeal__img__info__name">Big Mac</div>
-            <button class="randomMeal__img__info__category btn--primary">
-              Beef
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    include ./../modules/carousel/index.pug
+    
     <!-- Category -->
     include ./../modules/category/index.pug
     
+    </div>
+
+ 
+
+
+    script(src="js/vendors/siema.min.js")
+    script(src="js/main.js")
+  
   </body>
 </html>
