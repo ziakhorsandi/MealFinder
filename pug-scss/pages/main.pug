@@ -30,13 +30,14 @@
     
     //- </div>
 
-    include ./../partials/miniCard_mixin/index.pug
-    - const propsarr=[{img:"assets/images/meal01.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal01.png",colorClass:"minicard__grad_white",caption:"Vegan Chocolate Cake",label:"Beef"}]
+    //- include ./../partials/miniCard_mixin/index.pug
+    //- - const propsarr=[{img:"assets/images/meal01.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal02.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal03.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"}]
+    //- //- ,{img:"assets/images/meal01.png",colorClass:"minicard__grad_white",caption:"Vegan Chocolate Cake",label:"Beef"}]
 
-    div(style="width:100%; display:flex; justify-content:center; align-items:center; padding:1rem; height:150px")
-      for elem in propsarr
-        div(style="width:50%;height:inherit")
-          +minicard(elem)
+    //- div(style="width:100%; display:flex; flex-wrap:wrap; align-items:center; padding:1rem; height:auto")
+    //-   for elem in propsarr
+    //-     div(style="width:50%;height:inherit")
+    //-       +minicard(elem)
 
  
 

@@ -3,7 +3,7 @@
     <h2 class="category__heading title">Category</h2>
     <div class="category__list font-cl-sec-1 siema2">
     
-      for i in [1,2,3,4,5]
+      for i in [1,2,3,4,5,6,7,8,9,10,11]
         <div class="category__item selected">
           <div class="category__img">
             <img src="assets/images/beef1.png" alt="beef" />
@@ -48,5 +48,17 @@
       //-   <p class="category__name">Lamb</p>
       //- </div>
     </div>
+    <h2 class="category__heading title">Beef</h2>
+    include ../../partials/miniCard_mixin/index.pug
+    - const propsarr=[{img:"assets/images/meal01.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal02.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal03.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal01.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal02.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal03.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal02.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal03.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal01.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal02.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"},{img:"assets/images/meal03.png",colorClass:"minicard__grad_yellow",caption:"Vegan Chocolate Cake"}]
+    //- ,{img:"assets/images/meal01.png",colorClass:"minicard__grad_white",caption:"Vegan Chocolate Cake",label:"Beef"}]
+
+    div(style="width:100%; display:flex; flex-wrap:wrap; justify-content: space-between; align-items:center; height:auto")
+      for elem in propsarr
+        div(style="width:47%;height:inherit")
+          +minicard(elem)
+
+
+ 
   </div>
 </div>
