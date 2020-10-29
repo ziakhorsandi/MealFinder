@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "sass": "node-sass -w pug-scss/pages -o dist/css/ --recursive",
     "pug": "pug -w ./pug-scss/pages -o ./dist -P",
@@ -15,6 +16,7 @@
     "node-sass": "^4.14.1"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "pug-cli": "^1.0.0-alpha6",
     "siema": "^1.5.1"
   }
