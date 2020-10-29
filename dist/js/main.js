@@ -49,6 +49,11 @@ firstSiema.createSiema();
 
 const mySiema2 = new Siema({
   selector: '.siema2',
-  perPage: 4,
+  perPage: {
+    100: 3,
+    375: 4,
+    576: 5,
+    768: 6,
+  },
   // loop: true,
 });

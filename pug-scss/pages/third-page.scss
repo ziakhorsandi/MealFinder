@@ -1,0 +1,16 @@
+@import "./../partials/basis.scss";
+
+@import "./../modules/utilities";
+
+@import "./../modules/search-box/style";
+
+@import "./singlePage/style";
+
+@import "./listResult/style";
+
+.food__img {
+  background: url("https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 50vh;
+}

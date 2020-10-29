@@ -528,140 +528,6 @@ h6 {
       margin-right: 2rem;
       font-size: 18px; }
 
-.randomMeal__carousel {
-  position: relative; }
-
-.randomMeal__item {
-  position: relative; }
-
-.randomMeal__img {
-  background: url("https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg") no-repeat center center/cover;
-  width: 100%;
-  height: 50vh; }
-
-.randomMeal__img::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(196, 196, 196, 0) 0, rgba(225, 225, 225, 0.4937) 65%, rgba(255, 255, 255, 0.77) 100%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2; }
-
-.randomMeal__info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 20px;
-  position: absolute;
-  bottom: 22px;
-  left: 0;
-  z-index: 10;
-  font-size: 14px;
-  font-weight: 700; }
-
-.randomMeal .container {
-  position: relative; }
-
-.randomMeal .carousel__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: absolute;
-  top: calc(50% - 15px); }
-
-.randomMeal .prev,
-.randomMeal .next {
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
-  background-color: rgba(255, 255, 255, 0.7); }
-
-.category__list {
-  padding-left: 4px;
-  overflow: hidden;
-  margin-bottom: 25px; }
-
-.category__item {
-  width: 64px;
-  height: 115px;
-  margin-right: 20px;
-  padding-top: 5px;
-  border-radius: 30px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 12px; }
-
-.category__img {
-  width: 75px; }
-
-.minicard {
-  padding: 5px 0;
-  width: 100%;
-  height: 100%; }
-  .minicard__img {
-    position: relative;
-    width: 100%;
-    height: inherit;
-    overflow: hidden;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-topright: 15px;
-    border-top-right-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -moz-border-radius-bottomright: 15px;
-    border-bottom-right-radius: 15px;
-    -webkit-border-top-left-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    border-top-left-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    -moz-border-radius-bottomleft: 15px;
-    border-bottom-left-radius: 15px; }
-  .minicard img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .minicard__label {
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-topright: 15px;
-    border-top-right-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -moz-border-radius-bottomright: 15px;
-    border-bottom-right-radius: 15px;
-    -webkit-border-top-left-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    border-top-left-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    -moz-border-radius-bottomleft: 15px;
-    border-bottom-left-radius: 15px;
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 1px 10px;
-    background-color: #ffd53c; }
-  .minicard__txt {
-    font-size: 12px;
-    font-weight: 700; }
-  .minicard__grad {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; }
-  .minicard__grad_yellow {
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(201, 201, 201, 0.0822913) 56.67%, rgba(255, 213, 60, 0.55) 100%); }
-  .minicard__grad_white {
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(201, 201, 201, 0.0822913) 56.67%, rgba(255, 255, 255, 0.69) 100%); }
-
 .sp {
   padding: 0 10px; }
   .sp .title {
@@ -699,3 +565,8 @@ h6 {
     line-height: 24px;
     letter-spacing: 1px;
     text-align: justify; }
+
+.food__img {
+  background: url("https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 50vh; }
