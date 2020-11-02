@@ -25,3 +25,27 @@
     // margin-bottom: 10px;
   }
 }
+
+.list__items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+}
+
+.list__item {
+  width: 47%;
+  height: inherit;
+}
+@media (min-width: 500px) {
+  .list__item {
+    width: 32%;
+  }
+}
+@media (min-width: 768px) {
+  .list__item {
+    width: 24%;
+  }
+}

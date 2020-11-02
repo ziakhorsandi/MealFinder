@@ -1,59 +1,10 @@
-const slides = [
-  `<div class="randomMeal__item">
-<div class="randomMeal__img"></div>
-<div class="randomMeal__info">
-  <div class="randomMeal__name"><p>Big Mac</p></div>
-  <button class="randomMeal__category btn--primary">Beef</button>
-</div>
-</div>`,
-  `<div class="randomMeal__item">
-<div class="randomMeal__img"></div>
-<div class="randomMeal__info">
-  <div class="randomMeal__name"><p>Big Mac</p></div>
-  <button class="randomMeal__category btn--primary">Beef</button>
-</div>
-</div>`,
-  `<div class="randomMeal__item">
-<div class="randomMeal__img"></div>
-<div class="randomMeal__info">
-  <div class="randomMeal__name"><p>Big Mac</p></div>
-  <button class="randomMeal__category btn--primary">Beef</button>
-</div>
-</div>`,
-  `<div class="randomMeal__item">
-<div class="randomMeal__img"></div>
-<div class="randomMeal__info">
-  <div class="randomMeal__name"><p>Big Mac</p></div>
-  <button class="randomMeal__category btn--primary">Beef</button>
-</div>
-</div>`,
-];
-
-const siema = document.querySelector('.siemass');
-let innerHTML = '';
-slides.forEach((element) => {
-  innerHTML += element;
-});
-
-const firstSiema = new siemaUpdae(
-  siema,
-  innerHTML,
-  {
-    selector: '.siemass',
-    perPage: 1,
-  },
-  '.next',
-  '.prev'
-);
-firstSiema.createSiema();
-
-const mySiema2 = new Siema({
-  selector: '.siema2',
-  perPage: {
-    100: 3,
-    375: 4,
-    576: 5,
-    768: 6,
-  },
-  // loop: true,
-});
+class FindMeal {
+  constructor(IP) {
+    this.IP = IP;
+  }
+  async GetAPI() {
+    const res = await fetch(this.IP);
+    const data = await res.json();
+    return { data };
+  }
+}
