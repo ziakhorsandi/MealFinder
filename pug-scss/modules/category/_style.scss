@@ -30,22 +30,29 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: flex-start;
-  height: auto;
+  // height: auto;
+  margin: 0 -5px;
+
+  min-height: 400px;
 }
 
 .list__item {
-  width: 47%;
+  flex: 0 0 50%;
+  padding: 0 5px;
+  max-width: 50%;
   height: inherit;
 }
 @media (min-width: 500px) {
   .list__item {
-    width: 32%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
   }
 }
 @media (min-width: 768px) {
   .list__item {
-    width: 24%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }

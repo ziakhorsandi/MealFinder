@@ -8,3 +8,13 @@ class FindMeal {
     return { data };
   }
 }
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
