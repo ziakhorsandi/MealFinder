@@ -83,7 +83,7 @@ function showCategory(name) {
 
   // show meals of the selected category
   async function showCategoryItems(data) {
-    let temp = "";
+    let temp = [];
     for (let i = 0; i < 12; i++) {
       if (data[0]) {
         let listItems = document.createElement("div");
@@ -96,6 +96,13 @@ function showCategory(name) {
         </div>
       `;
         await categoryItems.appendChild(listItems);
+        temp.push(data[0].idMeal);
+        // temp.push(data[0].strMeal);
+        listItems.addEventListener("click", () => {
+          console.log("hi :>> ", listItems);
+          console.log("hi3 :>> ", temp[i]);
+          window.location = `./singlePage/index.html?${temp[i]}`;
+        });
         data.shift();
       }
     }

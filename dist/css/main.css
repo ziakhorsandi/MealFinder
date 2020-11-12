@@ -574,12 +574,20 @@ h6 {
 
 .randomMeal .prev,
 .randomMeal .next {
+  position: absolute;
+  top: calc(50% - 15px);
   border-radius: 50%;
   text-align: center;
   width: 30px;
   height: 30px;
   margin: 0 5px;
   background-color: rgba(255, 255, 255, 0.7); }
+
+.randomMeal .prev {
+  left: 0.5rem; }
+
+.randomMeal .next {
+  right: 0.5rem; }
 
 .category__list {
   padding-left: 4px;
@@ -607,7 +615,6 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  height: auto;
   margin: 0 -5px;
   min-height: 400px; }
 

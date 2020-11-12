@@ -11,25 +11,20 @@ html(lang="en")
         h1 Meal Finder
         include ./../../modules/search-box/index.pug
     .sp
-      .title Spicy Arrabiata Penne
+      .title
       .sp__img
-        img(src='./../assets/images/spicy.jpg',alt='...')
+        img(src='',alt='...')
       .title Category :
       .sp__links
-        span.sp__link Vegetarian
+        span.sp__link#sp__category
       .title Area :
       .sp__links
-        span.sp__link Italiano
+        span.sp__link#sp__area
       .title Ingredient :
-      .sp__links
-        span.sp__link penne rigate
-        span.sp__link olive oil
-        span.sp__link red chile flakes
-        span.sp__link chopped tomatoes
-        span.sp__link garlic
-        span.sp__link basil
-        span.sp__link italian seasoning
+      .sp__links#ingredients
+
       .title Instructions :
-        p.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      
+        p#Instructions
+          
+    script(src="../js/main.js")
+    script(src="../js/modules/singlepage.js")

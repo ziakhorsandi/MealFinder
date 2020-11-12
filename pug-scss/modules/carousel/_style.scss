@@ -65,12 +65,21 @@
   }
   .prev,
   .next {
+    position: absolute;
+    top: calc(50% - 15px);
+
     border-radius: 50%;
     text-align: center;
     width: 30px;
     height: 30px;
     margin: 0 5px;
     background-color: rgba(255, 255, 255, 0.7);
+  }
+  .prev {
+    left: 0.5rem;
+  }
+  .next {
+    right: 0.5rem;
   }
 }
 

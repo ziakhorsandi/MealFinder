@@ -47,26 +47,15 @@ function fetchi() {
     .GetAPI()
     .then((res) => res.data.meals)
     .then((data) => {
-      randomImages[
-        randomImages.length - 1
-      ].style.background = `url(${data[0].strMealThumb})
-       no-repeat center center/cover`;
-      randomNames[randomNames.length - 1].textContent = data[0].strMeal;
-      randomNames[randomNames.length - 1].textContent = data[0].strMeal;
-      randomNames[randomNames.length - 1].textContent = data[0].strMeal;
-      randomCategories[randomCategories.length - 1].textContent =
-        data[0].strCategory;
       meals.push(data[0]);
-      if (meals != []) {
-        randomImages.forEach((rndImage, index) => {
-          rndImage.style.background = `url(${meals[index].strMealThumb}) center center / cover no-repeat`;
+      randomImages.forEach((rndImage, index) => {
+        rndImage.style.background = `url(${meals[index].strMealThumb}) center center / cover no-repeat`;
+        randomNames[index].textContent = meals[index].strMeal;
+        randomCategories[index].textContent = meals[index].strCategory;
+
+        rndImage.parentElement.addEventListener("click", () => {
+          window.location = `./singlePage/index.html?${meals[index].idMeal}`;
         });
-        randomNames.forEach((rndName, index) => {
-          rndName.textContent = meals[index].strMeal;
-        });
-        randomCategories.forEach((rndCategory, index) => {
-          rndCategory.textContent = meals[index].strCategory;
-        });
-      }
+      });
     });
 }
