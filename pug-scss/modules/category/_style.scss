@@ -1,6 +1,5 @@
 .category {
   &__list {
-    // display: flex;
     padding-left: 4px;
     overflow: hidden;
     margin-bottom: 25px;
@@ -30,9 +29,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
   align-items: flex-start;
-  // height: auto;
   margin: 0 -5px;
 
   min-height: 400px;

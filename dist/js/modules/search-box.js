@@ -1,11 +1,3 @@
-// const searchAdvanced = document.querySelector(".search__advanced");
-// const searchDrop = document.querySelector(".search__drop");
-// searchDrop.style.display = "none";
-// searchAdvanced.addEventListener(
-//   "click",
-//   () => (searchDrop.style.display = "flex")
-// );
-console.log("box :>> ", window.location);
 const searchInput = document.querySelector(".search__input");
 const searchResult = document.querySelector(".searchResult");
 const results = document.querySelector(".results");
@@ -14,7 +6,6 @@ searchInput.addEventListener("keypress", search);
 function search(e) {
   if (e.key === "Enter" && e.target.value != " " && e.target.value != "") {
     results.innerHTML = "";
-    console.log("e.target :>> ", e.target.value);
     searchTitle.textContent = `Search results for: ${e.target.value}`;
     const searchMeal = new FindMeal(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${e.target.value}`
@@ -23,10 +14,7 @@ function search(e) {
       .GetAPI()
       .then((res) => res.data.meals)
       .then((data) => {
-        console.log("data :>> ", data);
         searchResult.style.display = "block";
-
-        // searchTitle.textContent = `You searched for: ${e.target.value}`;
         let temp = [];
         const limit = data.length;
         for (let i = 0; i < limit; i++) {
@@ -42,12 +30,9 @@ function search(e) {
     `;
             results.appendChild(listItems);
             temp.push(data[0].idMeal);
-            // temp.push(data[0].strMeal);
             listItems.addEventListener("click", () => {
-              // console.log(" :>> ", window.location);
               window.location = `./singlePage.html?${temp[i]}`;
             });
-            // console.log("data :>> ");
             data.shift();
           }
         }

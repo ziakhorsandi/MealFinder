@@ -528,6 +528,12 @@ h6 {
       margin-right: 2rem;
       font-size: 18px; }
 
+.results {
+  margin: 0 -5px; }
+
+#search__title {
+  padding-top: 2rem; }
+
 .randomMeal__carousel {
   position: relative; }
 

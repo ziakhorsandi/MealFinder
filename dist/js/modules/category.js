@@ -97,10 +97,7 @@ function showCategory(name) {
       `;
         await categoryItems.appendChild(listItems);
         temp.push(data[0].idMeal);
-        // temp.push(data[0].strMeal);
         listItems.addEventListener("click", () => {
-          console.log("hi :>> ", listItems);
-          console.log("hi3 :>> ", temp[i]);
           window.location = `./singlePage.html?${temp[i]}`;
         });
         data.shift();
