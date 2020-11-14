@@ -101,7 +101,7 @@ function showCategory(name) {
         listItems.addEventListener("click", () => {
           console.log("hi :>> ", listItems);
           console.log("hi3 :>> ", temp[i]);
-          window.location = `./singlePage/index.html?${temp[i]}`;
+          window.location = `./singlePage.html?${temp[i]}`;
         });
         data.shift();
       }

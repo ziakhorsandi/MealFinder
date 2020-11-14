@@ -79,7 +79,7 @@ function showCategory(name) {
     .then((res) => res.data.meals)
     .then((data) => {
       // window.removeEventListener("scroll", scro);
-      showCategoryItems(data);
+      makeItems(data);
       // setTimeout(() => {
       const mealImages = document.querySelectorAll(".mealImg");
       console.log("mealImages :>> ", mealImages);
@@ -99,7 +99,7 @@ function showCategory(name) {
             // &&
             // mealImages[11].complete
           ) {
-            showCategoryItems(data);
+            makeItems(data);
             // console.log(mealImages.length, " 1time :>> ", mealImages[11]);
           }
         }, 1000);
@@ -109,7 +109,7 @@ function showCategory(name) {
         //     isNextPage &&
         //     mealImages[11].complete
         //   ) {
-        //     showCategoryItems(data);
+        //     makeItems(data);
         //     console.log(mealImages.length, " 1time :>> ", mealImages[11]);
         //   } else {
         //     setTimeout(() => {
@@ -119,7 +119,7 @@ function showCategory(name) {
         //         isNextPage &&
         //         mealImages[mealImages.length - 1].complete
         //       ) {
-        //         showCategoryItems(data);
+        //         makeItems(data);
         //         console.log("3time :>> ");
         //       }
         //     }, 3000);
@@ -131,7 +131,7 @@ function showCategory(name) {
       }
     });
 
-  async function showCategoryItems(data) {
+  async function makeItems(data) {
     let temp = "";
     for (let i = 0; i < 12; i++) {
       if (data[0]) {

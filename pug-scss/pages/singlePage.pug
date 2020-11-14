@@ -3,13 +3,13 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="./../css/main.css")
+    link(rel="stylesheet", href="./css/main.css")
     title MealSinglePage
   body
     header
       .container
         h1 Meal Finder
-        include ./../../modules/search-box/index.pug
+        include ./../modules/search-box/index.pug
     .sp
       .title
       .sp__img
@@ -26,5 +26,7 @@ html(lang="en")
       .title Instructions :
         p#Instructions
           
-    script(src="../js/main.js")
-    script(src="../js/modules/singlepage.js")
+    script(src="js/main.js")
+    script(src="js/modules/singlepage.js")
+    script(src="js/modules/search-box.js")
+    //- script(src="js/modules/searchResult.js")

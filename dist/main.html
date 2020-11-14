@@ -17,7 +17,13 @@
 </svg>
 
   </div>
-  <input class="search__input font-cl-sec-2" type="text" placeholder="Search your meal ..."/>
+  <input class="search__input font-cl-sec-2" type="text" placeholder="Search your meal ..."/><!-- Search Result -->
+</div>
+<div class="searchResult" style="display:none">
+  <div class="container">
+    <h2 class="title" id="search__title"></h2>
+    <div class="results" style="display:flex;flex-wrap:wrap"></div>
+  </div>
 </div></div>
 </header>
 <!-- Random Meal --><div class="randomMeal">
@@ -46,5 +52,7 @@
 <script src="js/main.js"></script>
 <script src="js/modules/category.js"></script>
 <script src="js/modules/siemaUpdate.js"></script>
-<script src="js/modules/randomMeal.js"></script></body>
+<script src="js/modules/search-box.js"></script>
+<script src="js/modules/randomMeal.js"></script>
+<script src="js/modules/searchResult.js"></script></body>
 </html>

@@ -54,7 +54,7 @@ function fetchi() {
         randomCategories[index].textContent = meals[index].strCategory;
 
         rndImage.parentElement.addEventListener("click", () => {
-          window.location = `./singlePage/index.html?${meals[index].idMeal}`;
+          window.location = `./singlePage.html?${meals[index].idMeal}`;
         });
       });
     });
